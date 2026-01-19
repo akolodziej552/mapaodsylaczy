@@ -5,26 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa Odsyłaczy</title>
     <style>
-        #imgMap {
-            max-width: 100%;
-            height: auto;
-        }
         body {
-            display: flex;
+            background-color: gainsboro;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
             justify-content: center;
+            margin: 0;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            align-self: center;
+        }
+        area:hover {
+            background-color: rgba(211, 211, 211, 0.068);
+        }
+        img, map {
+            justify-self: center;
         }
     </style>
 </head>
 <body>
+    <h1>Najedź na elementy obrazka i kliknij by dowiedziec sie o nich wiecej.</h1>
     <img src="plytaglownaasus.jpg" alt="Płyta Główna Asus" usemap="#image-map">
     <map name="image-map">
-    <area target="_blank" alt="cpusocket" title="cpusocket" href="https://en.wikipedia.org/wiki/LGA_1700" coords="390,217,494,367" shape="rect">
-    <area target="_blank" alt="2xdimmddr5" title="2xdimmddr5" href="https://en.wikipedia.org/wiki/DDR5_SDRAM" coords="541,130,586,444" shape="rect">
-    <area target="_blank" alt="" title="" href="https://pl.wikipedia.org/wiki/PCI_Express" coords="224,657,492,691" shape="rect">
-    <area target="_blank" alt="" title="" href="https://pl.wikipedia.org/wiki/PCI_Express" coords="250,481,490,514" shape="rect">
-    <area target="_blank" alt="" title="" href="https://pl.wikipedia.org/wiki/PCI_Express" coords="240,612,318,644" shape="rect">
-    <area target="_blank" alt="" title="" href="https://pl.wikipedia.org/wiki/PCI_Express" coords="247,704,345,727" shape="rect">
-    <area target="_blank" alt="" title="" href="https://pl.wikipedia.org/wiki/M.2" coords="330,402,282,448,282,472,499,476,538,436,534,405" shape="poly">
-</map>
+        <area target="_blank" alt="cpusocket" title="cpusocket" href="https://pl.wikipedia.org/wiki/Gniazdo_procesora"
+            coords="390,216,491,363" shape="rect">
+        <area target="_blank" alt="vrm" title="vrm" href="https://pl.wikipedia.org/wiki/VRM"
+            coords="149,86,187,88,238,133,274,135,516,122,537,144,537,160,519,185,336,190,327,388,278,438,150,442,149,251"
+            shape="poly">
+        <area target="_blank" alt="ramdimm" title="ramdimm" href="https://pl.wikipedia.org/wiki/Pami%C4%99%C4%87_RAM"
+            coords="543,129,580,443" shape="rect">
+        <area target="_blank" alt="cpupower" title="cpupower" href="https://pl.wikipedia.org/wiki/Zasilacz_komputerowy"
+            coords="274,110,358,134" shape="rect">
+        <area target="_blank" alt="pciex16" title="pciex16" href="https://pl.wikipedia.org/wiki/PCI_Express"
+            coords="250,485,484,515" shape="rect">
+        <area target="_blank" alt="m2" title="m2" href="https://pl.wikipedia.org/wiki/M.2"
+            coords="335,395,531,399,531,432,489,478,286,476,284,445" shape="poly">
+        <area target="_blank" alt="mobochipset" title="mobochipset" href="https://pl.wikipedia.org/wiki/Chipset"
+            coords="504,504,645,646,569,728,349,517,497,521" shape="poly">
+        <area target="_blank" alt="qcode" title="qcode" href="https://rog.asus.com/" coords="607,131,655,162" shape="rect">
+        <area target="_blank" alt="startreset" title="startreset" href="https://rog.asus.com/articles/"
+            coords="667,164,652,172,651,181,660,190,655,199,655,207,661,213,673,214,680,202,674,191,682,181,680,165"
+            shape="poly">
+        <area target="_blank" alt="cpufan" title="cpufan" href="https://pl.wikipedia.org/wiki/Wentylator_(ch%C5%82odzenie)"
+            coords="556,728,681,752" shape="rect">
+        <area target="_blank" alt="frontpanel" title="frontpanel" href="https://www.techpowerup.com/"
+            coords="244,737,467,756" shape="rect">
+    </map>
+    <p>
+        Użyte źródła: <a href="https://pl.wikipedia.org" target="_blank">Wikipedia</a>, <a href="https://www.techpowerup.com/" target="_blank">TechPowerUp</a>, <a href="https://rog.asus.com/articles/" target="_blank">Asus</a>.
+        Pochodzenie użytego zdjęcia: <a href="https://www.mediaexpert.pl/komputery-i-tablety/podzespoly-komputerowe/plyty-glowne/plyta-glowna-asus-rog-maximus-z690-apex" target="_blank">Media Expert</a>
+    </p>
 </body>
 </html>
